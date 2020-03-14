@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+       <title>Карта</title>
+       
+   
+    <style>
+
+      h1,h2,h3{
+         margin: 40px;
+      }
+      body {
+  line-height: 2;
+   text-align: center;
+    background-color: #8fe88f8a !important;
+    font: 15px 'Verdana';
+   
+    padding: 0;
+
+}
+    .container {
+      
+      display: flex;
+      justify-content:space-around;
+       flex-wrap: wrap;
+    }
+    
+    .container div {
+     
+      text-align: center;
+      margin: 8px;
+      max-width: 200px;
+      min-width: 150px;
+    }
+    .container div img {
+      width: 80%;
+    }
+
+    form{
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+}
+input{
+    box-sizing: border-box;
+    display: block;
+    border: none;
+    box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.11);
+    padding: 10px 20px;
+    width: 100%;
+    margin: 10px 10px;
+    outline: none;
+}
+input[type="submit"]{
+    background: green;
+    border: none;
+    box-shadow: 0px 2px 0 1px plain green;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 200px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+input[type="submit"]:hover{
+    background: black;
+    box-shadow: 0px 2px 0 1px black;
+}
+  </style>
+
+  </head>
+ <body>
+  <h1>Основные характеристики</h1>
+  <p>Материал: спанбонд<br> Размер, см.: 35х41<br>Ручки, см.: 60х2,5<br>Цена: 70 грн.<br></p>
+
+  <h2>Галерея</h2>
+<div class="container">
+  <div><img src="images_k/k1.jpg" alt="картинка"></div>
+  <div><img src="images_k/k2.jpg" alt="картинка"></div>
+  <div><img src="images_k/k3.jpg" alt="картинка"></div>
+  <div><img src="images_k/k4.jpg" alt="картинка"></div>
+</div>
+
+
+<h3>Оформить заказ</h3>
+ <form action="send.php" method="get">
+ <input type="text" placeholder="Имя" name="name"><BR>
+ <input type="text" placeholder="Телефон" name="phone"><BR>
+ <input type="text" placeholder="e-mail" name="e-mail"><BR>
+<input type="text" placeholder="Сообщение" name="message"><BR>
+<input type="submit" value="отправить">
+</form>
+
+
+   </body>
+</html>
